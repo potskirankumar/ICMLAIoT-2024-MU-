@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE-edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> ICMLAIoT - 2024 </title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	
+	<nav>
+		<ul class="side"> 
+			<li onclick=hide()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+			<li> <a href="#"> Home </a> </li>
+			<li> <a href="#"> About </a> </li>
+			<li> <a href="#"> Coordinators</a> </li>
+			<li> <a href="#"> Contact </a> </li>
+			<li> <a href="#"> Log In </a> </li>
+		</ul>
+		<ul> 
+			
+			<li class="hideOnResize"> <a href="#"> Home </a> </li>
+			<li class="hideOnResize"> <a href="#"> About </a> </li>
+			<li class="hideOnResize"> <a href="#"> About </a> </li>
+			<li class="hideOnResize"> <a href="#"> Coordinators</a> </li>
+			<li class="hideOnResize"> <a href="#"> Contact </a> </li>
+			<li class="hideOnResize"> <a href="#"> Log In </a> </li>
+			<li class="menu" onclick=show()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+		</ul>
+	</nav>
+	
+	<marquee class="marq" loop=" ">Machine Learning Applications for Internet of Things (ICMLAIoT-2024)</marquee>
+	<script>
+		function show(){
+			const side=document.querySelector('.side')
+			side.style.display='flex'
+		}
+		function hide(){
+			const side=document.querySelector('.side')
+			side.style.display='none'
+		}
+	</script>
+</body>
+</html>
